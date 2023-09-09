@@ -10,3 +10,4 @@ All notable changes to this project will be documented in this file. This change
 [2.0.1]: Added missing handlers
 [2.1.0]: Upgraded camel to 3.13.0. Removed deprecated function
 [2.2.0]: Add wire-tap, and aggregate completion-interval
+[2.2.1]: Migrated apache camel version from 3.11 to 4.0.0
