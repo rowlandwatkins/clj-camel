@@ -11,7 +11,7 @@
   (:import (org.apache.camel.model RouteDefinition ProcessorDefinition ChoiceDefinition SplitDefinition)
            (org.apache.camel Exchange Processor Predicate Expression CamelContext NamedNode AggregationStrategy TypeConverter ProducerTemplate LoggingLevel ConsumerTemplate)
            (org.apache.camel.impl DefaultCamelContext)
-           (org.apache.camel.builder DeadLetterChannelBuilder RouteBuilder SimpleBuilder Builder ValueBuilder AggregationStrategies)
+           (org.apache.camel.builder DeadLetterChannelBuilder RouteBuilder Builder ValueBuilder AggregationStrategies)
            (clojure.lang ExceptionInfo)
            (org.apache.camel.model.language JsonPathExpression)
            (org.apache.camel.spi HeaderFilterStrategy IdempotentRepository)
@@ -195,11 +195,11 @@
   [^ProcessorDefinition processor-definition & [^Expression expr]]
   (.setBody processor-definition expr))
 
-(defn simple
-  "Creates simple expression
-  eg. (c/idempotent-consumer (c/simple '${body}') (c/create-memory-idempotent-repository))"
-  [text]
-  (SimpleBuilder/simple text))
+;(defn simple
+;  "Creates simple expression
+;  eg. (c/idempotent-consumer (c/simple '${body}') (c/create-memory-idempotent-repository))"
+;  [text]
+;  (SimpleBuilder/simple text))
 
 (defn constant
   "Creates constant expression
