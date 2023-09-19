@@ -6,7 +6,7 @@
         org.apache.camel/camel-jcache     {:mvn/version "4.0.0"}
         org.apache.camel/camel-management {:mvn/version "4.0.0"}
         org.apache.camel/camel-ftp        {:mvn/version "4.0.0"}
-        malabarba/lazy-map                {:mvn/version "1.3"]
+        malabarba/lazy-map                {:mvn/version "1.3"}
         camel-snake-kebab                 {:mvn/version "0.4.1"}
         metosin/jsonista                  {:mvn/version "0.2.6"}
         clj-time                          {:mvn/version "0.15.2"}}              
